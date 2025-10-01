@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Regular Calendar - Ocean Professional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Screen specific CSS -->
+  <link rel="stylesheet" href="./figma-regular.css">
+</head>
+<body>
+  <main class="op-app">
+    <section class="op-card calendar" role="application" aria-label="Calendar">
+      <header class="calendar__header">
+        <button class="calendar__nav calendar__nav--prev" aria-label="Previous month">
+          <span class="icon icon-chevron-left" aria-hidden="true"></span>
+        </button>
+
+        <div class="calendar__title-group" aria-live="polite">
+          <button class="calendar__title calendar__title--month" aria-haspopup="true" aria-expanded="false">
+            <span class="calendar__title-text">April</span>
+            <span class="icon icon-caret-down" aria-hidden="true"></span>
+          </button>
+          <button class="calendar__title calendar__title--year" aria-haspopup="true" aria-expanded="false">
+            <span class="calendar__title-text">2021</span>
+            <span class="icon icon-caret-down" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <button class="calendar__nav calendar__nav--next" aria-label="Next month">
+          <span class="icon icon-chevron-right" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <div class="calendar__dow" role="row">
+        <div class="calendar__dow-cell" role="columnheader" aria-label="Monday">Mo</div>
+        <div class="calendar__dow-cell" role="columnheader" aria-label="Tuesday">Tu</div>
+        <div class="calendar__dow-cell" role="columnheader" aria-label="Wednesday">We</div>
+        <div class="calendar__dow-cell" role="columnheader" aria-label="Thursday">Th</div>
+        <div class="calendar__dow-cell" role="columnheader" aria-label="Friday">Fr</div>
+        <div class="calendar__dow-cell" role="columnheader" aria-label="Saturday">Sa</div>
+        <div class="calendar__dow-cell" role="columnheader" aria-label="Sunday">Su</div>
+      </div>
+
+      <div class="calendar__grid" role="grid" aria-readonly="true">
+        <!-- Week 1 -->
+        <div class="calendar__cell calendar__cell--muted" role="gridcell" aria-disabled="true"><span>29</span></div>
+        <div class="calendar__cell calendar__cell--muted" role="gridcell" aria-disabled="true"><span>30</span></div>
+        <div class="calendar__cell calendar__cell--muted" role="gridcell" aria-disabled="true"><span>31</span></div>
+        <div class="calendar__cell" role="gridcell"><span>1</span></div>
+        <div class="calendar__cell" role="gridcell"><span>2</span></div>
+        <div class="calendar__cell" role="gridcell"><span>3</span></div>
+        <div class="calendar__cell" role="gridcell"><span>4</span></div>
+
+        <!-- Week 2 -->
+        <div class="calendar__cell" role="gridcell"><span>5</span></div>
+        <div class="calendar__cell" role="gridcell"><span>6</span></div>
+        <div class="calendar__cell calendar__cell--today calendar__cell--selected" role="gridcell" aria-current="date" aria-selected="true"><span>7</span></div>
+        <div class="calendar__cell" role="gridcell"><span>8</span></div>
+        <div class="calendar__cell" role="gridcell"><span>9</span></div>
+        <div class="calendar__cell" role="gridcell"><span>10</span></div>
+        <div class="calendar__cell" role="gridcell"><span>11</span></div>
+
+        <!-- Week 3 -->
+        <div class="calendar__cell" role="gridcell"><span>12</span></div>
+        <div class="calendar__cell" role="gridcell"><span>13</span></div>
+        <div class="calendar__cell" role="gridcell"><span>14</span></div>
+        <div class="calendar__cell" role="gridcell"><span>15</span></div>
+        <div class="calendar__cell" role="gridcell"><span>16</span></div>
+        <div class="calendar__cell" role="gridcell"><span>17</span></div>
+        <div class="calendar__cell" role="gridcell"><span>18</span></div>
+
+        <!-- Week 4 -->
+        <div class="calendar__cell" role="gridcell"><span>19</span></div>
+        <div class="calendar__cell" role="gridcell"><span>20</span></div>
+        <div class="calendar__cell" role="gridcell"><span>21</span></div>
+        <div class="calendar__cell" role="gridcell"><span>22</span></div>
+        <div class="calendar__cell" role="gridcell"><span>23</span></div>
+        <div class="calendar__cell" role="gridcell"><span>24</span></div>
+        <div class="calendar__cell" role="gridcell"><span>25</span></div>
+
+        <!-- Week 5 -->
+        <div class="calendar__cell" role="gridcell"><span>26</span></div>
+        <div class="calendar__cell" role="gridcell"><span>27</span></div>
+        <div class="calendar__cell" role="gridcell"><span>28</span></div>
+        <div class="calendar__cell" role="gridcell"><span>29</span></div>
+        <div class="calendar__cell" role="gridcell"><span>30</span></div>
+        <div class="calendar__cell calendar__cell--muted" role="gridcell" aria-disabled="true"><span>1</span></div>
+        <div class="calendar__cell calendar__cell--muted" role="gridcell" aria-disabled="true"><span>2</span></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
